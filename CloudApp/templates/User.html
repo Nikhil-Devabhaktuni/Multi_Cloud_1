@@ -6,23 +6,23 @@
 <link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
  <script LANGUAGE="Javascript" >
 function validate(){
-	var x=document.forms["f1"]["username"].value;
-	var y=document.forms["f1"]["password"].value;
-	if(x == null || x==""){
-		window.alert("Username must be enter");
-		document.f1.t1.focus();
-		return false;
-	}
-	if(y == null || y==""){
-		window.alert("Password must be enter");
-		document.f1.t2.focus();
-		return false;
-	}
-	return true;
+    var x=document.forms["f1"]["username"].value;
+    var y=document.forms["f1"]["password"].value;
+    if(x == null || x==""){
+        window.alert("Username must be enter");
+        document.f1.t1.focus();
+        return false;
+    }
+    if(y == null || y==""){
+        window.alert("Password must be enter");
+        document.f1.t2.focus();
+        return false;
+    }
+    return true;
 }
-		
-	
-	</script>
+        
+    
+    </script>
 </head>
 <body>
 <div id="wrapper">
@@ -30,7 +30,7 @@ function validate(){
     <div id="logo">
       <h1><font color="orange" size=5>Efficient Secure Data Retrieval on Cloud using Multi-Stage
 Authentication and Optimized Blowfish Algorithm</font></h1>
-	  <marquee><font color="pink" size=4>Secure Data Retrieval</font></marquee>
+      <marquee><font color="pink" size=4>Secure Data Retrieval</font></marquee>
     </div>
    
   
@@ -46,29 +46,29 @@ Authentication and Optimized Blowfish Algorithm</font></h1>
   </div>
   <div class="entry">
    <br/><br/><br/>
-	<font size="" color="white"><center>{{ data }}</center></font>
-	 <br>
-	 <center><font size="3" color="white">User Login Screen</font></center>
-	<form name="f1" method="post" action={% url 'UserLogin' %} OnSubmit="return validate()">
-	{% csrf_token %}
-	<br><br>
-	<TABLE align=center width="35%" class="notepad">
-		<TR><TH align="left"><font size="" color="white">Username
-		<TD>&nbsp;&nbsp;<Input type=text name="username" value='' class="form-control">
-		<div id='nameid'></div>
-		</TD>
-		</TR>
-		
-		<TR><TH align="left"><font size="" color="white">Password
-		<TD>&nbsp;&nbsp;<Input type='password' name="password"  value='' class="form-control">
-		</TR>
-		  <TR>
-				 <TD></TD>
-			<TD>	
-		  <input type="submit" value="Login">
-		 
-		  </TABLE>
-		
+    <font size="" color="white"><center>{{ data }}</center></font>
+     <br>
+     <center><font size="3" color="white">User Login Screen</font></center>
+    <form name="f1" method="post" action={% url 'UserLogin' %} OnSubmit="return validate()">
+    {% csrf_token %}
+    <br><br>
+    <TABLE align=center width="35%" class="notepad">
+        <TR><TH align="left"><font size="" color="white">Username
+        <TD>&nbsp;&nbsp;<Input type=text name="username" value='' class="form-control">
+        <div id='nameid'></div>
+        </TD>
+        </TR>
+        
+        <TR><TH align="left"><font size="" color="white">Password
+        <TD>&nbsp;&nbsp;<Input type='password' name="password"  value='' class="form-control">
+        </TR>
+          <TR>
+                 <TD></TD>
+            <TD>    
+          <input type="submit" value="Login">
+         
+          </TABLE>
+        
 </form>
 </div>
 
