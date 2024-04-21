@@ -1,0 +1,22 @@
+create database multistagecloud;
+use multistagecloud;
+
+create table register(
+  username varchar(30) primary key,
+  password varchar(30),
+  contact varchar(12),
+  email varchar(30),
+  address varchar(40),
+  totp_secret varchar(255)
+);
+
+
+create table files(
+  username varchar(50), 
+  filename varchar(50), 
+  filekeys varchar(200),
+  encryption_type varchar(20),
+  aes_key varchar(255),
+  encryption_time float,
+  compression_ratio float
+);

@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+<head>
+    <title>Encryption Results</title>
+    <!-- ... (existing head content) -->
+</head>
+<body>
+    <!-- ... (existing body content) -->
+    <div id="content">
+        <div class="post">
+            <div class="title">
+                <h2>Encryption Results</h2>
+            </div>
+            <div class="entry">
+                <table border="1" align="center">
+                    <tr>
+                        <th>Encryption Type</th>
+                        <th>Average Encryption Time (s)</th>
+                        <th>Average Compression Ratio</th>
+                    </tr>
+                    <tr>
+                        <td>Blowfish</td>
+                        <td>{{ encryption_times.0 }}</td>
+                        <td>{{ compression_ratios.0 }}</td>
+                    </tr>
+                    <tr>
+                        <td>AES</td>
+                        <td>{{ encryption_times.1 }}</td>
+                        <td>{{ compression_ratios.1 }}</td>
+                    </tr>
+                </table>
+                <br>
+                <img src="/media/{{ plot_filename }}" alt="Encryption Results Plot">
+                <table>
+                <td>{{ MEDIA_URL }}</td>
+                <td>{{ plot_filename }}</td>
+            </table>
+            </div>
+        </div>
+    </div>
+    <!-- ... (existing body content) -->
+</body>
+</html>
