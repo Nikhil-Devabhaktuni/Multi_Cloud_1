@@ -2,7 +2,6 @@ asgiref==3.5.2
 astroid==2.15.5
 attrs==22.1.0
 autopep8==2.0.0
-aws-cfn-bootstrap==2.0
 awscrt==0.19.19
 Babel==2.9.1
 boto3==1.34.69
