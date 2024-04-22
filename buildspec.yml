@@ -5,7 +5,7 @@ phases:
             python: 3.8
         commands:
             - pip install --upgrade pip
-            - sudo yum install mesa-libGL
+            - pip install opencv-python-headless
             - pip install -r requirements.txt
     pre_build:
         commands:
