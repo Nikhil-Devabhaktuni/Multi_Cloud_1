@@ -5,8 +5,7 @@ phases:
             python: 3.8
         commands:
             - pip install --upgrade pip
-            - sudo yum install libgl1-mesa-glx
-            - export LD_LIBRARY_PATH=/path/to/libGL.so.1:$LD_LIBRARY_PATH
+            - sudo yum install mesa-libGL
             - pip install -r requirements.txt
     pre_build:
         commands:
