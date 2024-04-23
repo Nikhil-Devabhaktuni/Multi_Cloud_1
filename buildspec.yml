@@ -6,7 +6,7 @@ phases:
         commands:
             - pip install --upgrade pip
             - pip install opencv-python-headless
-            - sudo yum install dbus-devel dbus-glib-devel
+            - sudo yum install -y dbus-devel dbus-glib-devel
             - pip install -r requirements.txt
     pre_build:
         commands:
