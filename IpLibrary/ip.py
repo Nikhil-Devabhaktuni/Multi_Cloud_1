@@ -18,7 +18,6 @@ def send_login_notification(username, email,ip_address,location):
     send_mail(subject, message, settings.EMAIL_HOST_USER, recipients, fail_silently=False)
 
 
-
 def send_Alert_Notification(username, email,ip_address,location):
     subject = f'Security Alert: Unusual Login Attempt Detected for your Account'
     message = f'Dear {username},\n\nWe detected an unusual login attempt on your account.\n\nDate: {timezone.now().strftime("%Y-%m-%d %H:%M:%S")}\nLocation: {location}\nIP Address: {ip_address}\n\nIf this was not you, please take immediate action:\n1. Change your password immediately.\n2. Review your account activity for any unauthorized access.\n3. Enable two-factor authentication for added security.\n\nIf you have any concerns or need assistance, please contact our support team immediately here {settings.EMAIL_RECEIVING_USER}.\n\nThank you for helping us keep your account secure.\n\nBest regards,\nMultiCloud Security Team'

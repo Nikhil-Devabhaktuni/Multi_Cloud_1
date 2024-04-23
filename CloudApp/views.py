@@ -75,7 +75,7 @@ def EncryptionResults(request):
             
             # Save the plot image
             plot_filename = 'encryption_results.png'
-            plot_path = os.path.join(settings.MEDIA_Nikhil123, plot_filename)
+            plot_path = os.path.join(settings.MEDIA_ROOT, plot_filename)
             plt.savefig(plot_path)
             
             context = {

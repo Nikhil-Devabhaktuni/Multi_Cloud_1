@@ -1,0 +1,2 @@
+[console_scripts]
+git-remote-codecommit = git_remote_codecommit:main
