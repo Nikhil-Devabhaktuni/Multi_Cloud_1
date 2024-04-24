@@ -7,7 +7,6 @@ from django.shortcuts import render, redirect
 import os
 import pymysql
 from django.core.files.storage import FileSystemStorage
-import cv2
 import os
 import time
 import sys
