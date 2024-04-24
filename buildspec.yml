@@ -8,10 +8,12 @@ phases:
             - pip install opencv-python-headless
             - sudo yum install -y dbus-devel dbus-glib-devel
             - pip install -r requirements.txt
-            - sudo yum install mesa-libGL
+            - sudo yum install mesa-libGL -y
+
     pre_build:
         commands:
             - python --version
+            - sudo yum install mesa-libGL -y
 artifacts:
     files:
         - '**/*'
