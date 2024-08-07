@@ -129,9 +129,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AWS_ACCESS_KEY_ID = 'AKIARLEXBFQUXFLAVXEQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'x22156411-1'
+AWS_ACCESS_KEY_ID = 'Key'
+AWS_SECRET_ACCESS_KEY = 'Key'
+AWS_STORAGE_BUCKET_NAME = 'Bucket_Name'
 AWS_S3_REGION_NAME = 'us-east-1'  # e.g., 'us-west-2'
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
@@ -143,6 +143,6 @@ EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'devabhaktuninikhil72@gmail.com' 
-EMAIL_HOST_PASSWORD = 'iivrhxfrgghtigjy' 
-EMAIL_RECEIVING_USER = ['x22156411@student.ncirl.ie']
+EMAIL_HOST_USER = 'your_email.com@gmail.com' 
+EMAIL_HOST_PASSWORD = 'pass' 
+EMAIL_RECEIVING_USER = ['x22156411@student.ncirl.ie'] # reciver mail id.
